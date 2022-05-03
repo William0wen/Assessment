@@ -1,10 +1,19 @@
-"""Puts 01_ask_question_v2 into a re-usable function"""
+"""Generates a random question out of
+a list of questions and answers, using 01_ask_question_v3"""
+
+# List of questions and answers, stored in a dictionary
+questions = ["What is the Maori word for Monday? ",
+             "What is the Maori word for Tuesday? ",
+             "What is the Maori word for Wednesday? ",
+             "What is the Maori word for Thursday? ",
+             "What is the Maori word for Friday? ",
+             "What is the Maori word for Saturday? ",
+             "What is the Maori word for Sunday? "]
 
 score = 0
 
 
 def ask(question_text, answer):
-    # Brings the score variable into the function
     global score
     while True:
         # Ask question
@@ -24,7 +33,6 @@ def ask(question_text, answer):
             print(question)
 
 
-# Main
 ask("What is the Maori word for Tuesday? ", "ratu")
 
 
