@@ -1,18 +1,22 @@
-"""Puts 02_yes_no_v1 into a loop with a test output"""
+"""Puts 02_ask_question_v1 into a loop with a test output
+Also tidies up the code by adding \n for a new line"""
+
+score = 0
 
 while True:
-    # Ask if played before
-    show_instructions = input("Have you played this game before? ").lower().strip()
+    # Ask question
+    question = input("\nWhat is the Maori word for Tuesday? ").lower().strip()
 
-    # If y, continue
-    if show_instructions == "y" or show_instructions == "yes":
-        print("Program continues\n")
+    # If answer is correct, continue
+    if question == "ratu":
+        print("Program continues, 1 point added")
+        score += 1
+        print(f"score: {score}")
+        print(question)
 
-    # If n, display instructions
-    elif show_instructions == "n" or show_instructions == "no":
-        print("display instructions\n")
-
-    # Else, ask again
+    # Else, score stays the same, continue
     else:
-        print("Please type [yes] or [no]\n")
+        print("Wrong answer!")
+        print(f"score: {score}")
+        print(question)
 

@@ -1,19 +1,19 @@
-"""Asks for users input, if n, do instructions,
-if y, skip instructions.
+"""Asks for users input, if the answer
+is right, 1 point is added.
+Else, print "Wrong Answer!"
 Uses .lower() and .strip() to simplify input"""
 
-# Ask if played before
-show_instructions = input("Have you played this game before? ").lower().strip()
+score = 0
 
-# If y, continue
-if show_instructions == "y" or show_instructions == "yes":
-    print("Program continues")
+# Ask question
+question = input("What is the Maori word for Tuesday? ").lower().strip()
 
-# If n, display instructions
-elif show_instructions == "n" or "no":
-    print("display instructions")
+# If answer is correct, continue
+if question == "ratu":
+    print("Program continues, 1 point added")
+    score += 1
 
-# Else, ask again
+# Else, score stays the same, continue
 else:
-    print("Please type [yes] or [no]")
+    print("Wrong answer!")
 

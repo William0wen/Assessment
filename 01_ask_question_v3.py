@@ -1,24 +1,26 @@
 """Puts 02_yes_no_v2 into a re-usable function"""
 
+score = 0
+
 
 def ask(question_text, answer):
+    global score
     while True:
-        # Ask if played before
-        question = input(question_text).lower().strip()
+        # Ask question
+        question = input("\nWhat is the Maori word for Tuesday? ").lower().strip()
 
-        # If y, continue
-        if question == "yes" or question == "y":
-            print("Program continues\n")
-            return question
+        # If answer is correct, continue
+        if question == answer:
+            print("Program continues, 1 point added")
+            score += 1
+            print(f"score: {score}")
+            print(question)
 
-        # If n, display instructions
-        elif question == "no" or question == "n":
-            print("display instructions\n")
-            return question
-
-        # Else, ask again
+        # Else, score stays the same, continue
         else:
-            print("Please type [yes] or [no]\n")
+            print("Wrong answer!")
+            print(f"score: {score}")
+            print(question)
 
 
 ask("Have you played this game before? ")
