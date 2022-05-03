@@ -23,6 +23,6 @@ def ask(question_text, answer):
             print(question)
 
 
-ask("Have you played this game before? ")
+ask("What is the Maori word for Tuesday? ", "ratu")
 
 
