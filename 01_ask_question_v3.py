@@ -1,4 +1,4 @@
-"""Puts 02_yes_no_v2 into a re-usable function"""
+"""Puts 01_ask_question_v2 into a re-usable function"""
 
 score = 0
 

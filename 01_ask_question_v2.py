@@ -1,4 +1,4 @@
-"""Puts 02_ask_question_v1 into a loop with a test output
+"""Puts 01_ask_question_v1 into a loop with a test output
 Also tidies up the code by adding \n for a new line"""
 
 score = 0
