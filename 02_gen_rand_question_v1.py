@@ -1,23 +1,24 @@
 """Generates a random question out of
 a list of questions and answers, using 01_ask_question_v3"""
 
-# List of questions and answers, stored in a dictionary
-questions = ["What is the Maori word for Monday? ",
-             "What is the Maori word for Tuesday? ",
-             "What is the Maori word for Wednesday? ",
-             "What is the Maori word for Thursday? ",
-             "What is the Maori word for Friday? ",
-             "What is the Maori word for Saturday? ",
-             "What is the Maori word for Sunday? "]
+import random
+
+# List of questions and answers, stored in dictionaries
+questions = [{"day": "Monday", "answer": "Rahina"},
+             {"day": "Tuesday", "answer": "Ratu"},
+             {"day": "Wednesday", "answer": "Raapa"}]
 
 score = 0
+
+random_question = random.choice(questions)
+print(random_question)
 
 
 def ask(question_text, answer):
     global score
     while True:
         # Ask question
-        question = input("\nWhat is the Maori word for Tuesday? ").lower().strip()
+        question = input(f"What is the Maori word for {question_text}? ").lower().strip()
 
         # If answer is correct, continue
         if question == answer:
@@ -33,6 +34,6 @@ def ask(question_text, answer):
             print(question)
 
 
-ask("What is the Maori word for Tuesday? ", "ratu")
+
 
 
