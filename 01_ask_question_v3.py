@@ -21,6 +21,6 @@ def ask(question_text, answer):
             print("Please type [yes] or [no]\n")
 
 
-ask("Have you played this game before? ", "")
+ask("Have you played this game before? ")
 
 

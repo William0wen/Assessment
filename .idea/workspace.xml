@@ -38,8 +38,8 @@
       <recent name="C:\Users\willi\OneDrive - Middleton Grange School\2022\Computer Science\Programming\Assessment" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.01_yes_no_v3">
-    <configuration name="01_yes_no_v2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.01_ask_question_v3">
+    <configuration name="01_ask_question_v2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Assessment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -51,7 +51,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01_yes_no_v2.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\willi\OneDrive - Middleton Grange School\2022\Computer Science\Programming\Assessment\01_ask_question_v2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -60,7 +60,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="01_yes_no_v2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="01_ask_question_v2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Assessment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -72,7 +72,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\willi\OneDrive - Middleton Grange School\2022\Computer Science\Programming\Assessment\01_yes_no_v2.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\willi\OneDrive - Middleton Grange School\2022\Computer Science\Programming\Assessment\01_ask_question_v2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -81,7 +81,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="01_yes_no_v3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="01_ask_question_v3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Assessment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -93,7 +93,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01_yes_no_v3.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\willi\OneDrive - Middleton Grange School\2022\Computer Science\Programming\Assessment\01_ask_question_v3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,9 +104,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.01_yes_no_v3" />
-        <item itemvalue="Python.01_yes_no_v2 (1)" />
-        <item itemvalue="Python.01_yes_no_v2" />
+        <item itemvalue="Python.01_ask_question_v3" />
+        <item itemvalue="Python.01_ask_question_v2" />
+        <item itemvalue="Python.01_ask_question_v2" />
       </list>
     </recent_temporary>
   </component>
