@@ -4,14 +4,19 @@ a list of questions and answers, using 01_ask_question_v3"""
 import random
 
 # List of questions and answers, stored in dictionaries
-questions = [{"day": "Monday", "answer": "Rahina"},
-             {"day": "Tuesday", "answer": "Ratu"},
-             {"day": "Wednesday", "answer": "Raapa"}]
-
-score = 0
+questions = [{"day": "Monday", "answer": "rahina"},
+             {"day": "Tuesday", "answer": "ratu"},
+             {"day": "Wednesday", "answer": "raapa"},
+             {"day": "Thursday", "answer": "rapare"},
+             {"day": "Friday", "answer": "ramere"},
+             {"day": "Saturday", "answer": "rahoroi"},
+             {"day": "Sunday", "answer": "ratapu"}]
 
 random_question = random.choice(questions)
-print(random_question)
+rand_day = random_question["day"]
+rand_answer = random_question["answer"]
+
+score = 0
 
 
 def ask(question_text, answer):
@@ -22,17 +27,17 @@ def ask(question_text, answer):
 
         # If answer is correct, continue
         if question == answer:
-            print("Program continues, 1 point added")
+            print("\nCorrect!")
             score += 1
-            print(f"score: {score}")
-            print(question)
+            print(f"score: {score}\n")
 
         # Else, score stays the same, continue
         else:
-            print("Wrong answer!")
-            print(f"score: {score}")
-            print(question)
+            print("\nWrong answer!")
+            print(f"score: {score}\n")
 
+
+ask(rand_day, rand_answer)
 
 
 
