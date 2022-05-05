@@ -1,5 +1,4 @@
-"""Generates a random question out of
-a list of questions and answers, using 01_ask_question_v3"""
+"""Loops 02_gen_rand_number 7 times, so that every question has a chance of appearing"""
 
 import random
 
