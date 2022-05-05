@@ -13,8 +13,6 @@ questions = [{"day": "Monday", "answer": "rahina"},
              {"day": "Saturday", "answer": "rahoroi"},
              {"day": "Sunday", "answer": "ratapu"}]
 
-# Generating random question out of the list of questions
-
 score = 0
 
 
