@@ -57,4 +57,7 @@ for number in range(0, 7):
 
 print(f"\nYour final score is:\n\t*** {score}/7! ***")
 
-print(wrong_answers)
+if len(wrong_answers) == 0:
+    print("\nCongratulations, you got every question correct!")
+else:
+    print(f"\nWrong answers: {wrong_answers}")
