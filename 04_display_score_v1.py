@@ -1,6 +1,4 @@
-"""Based off 03_loop_v1, but deletes a
-question from the list after it has already been asked.
-This way, every question will be asked once, and not repeated."""
+"""Draws the user's attention to the final score."""
 
 import random
 
@@ -12,6 +10,8 @@ questions = [{"day": "Monday", "answer": "rahina"},
              {"day": "Friday", "answer": "ramere"},
              {"day": "Saturday", "answer": "rahoroi"},
              {"day": "Sunday", "answer": "ratapu"}]
+
+wrong_answers = []
 
 score = 0
 
@@ -30,8 +30,7 @@ def ask(question_text, answer):
 
     # Else, score stays the same, continue
     else:
-        print("\nWrong answer!")
-        print(f"score: {score}\n")
+        print("\nWrong answer!\n")
 
 
 # Main
@@ -43,9 +42,19 @@ for number in range(0, 7):
     rand_day = random_question["day"]
     rand_answer = random_question["answer"]
 
+    # Assigning the beforehand score to a variable
+    before_score = score
+
     # question loop
     ask(rand_day, rand_answer)
 
+    # If the score hasn't changed, the question answer is added to a wrong_answers list
+    if score == before_score:
+        wrong_answers.append(random_question.pop("answer"))
+
     # removing the question that has already been asked.
     questions.remove(random_question)
-    print(questions)
+
+print(f"\nYour final score is:\n\t*** {score}/7! ***")
+
+print(wrong_answers)
