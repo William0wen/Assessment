@@ -26,7 +26,7 @@ def ask(question_text, answer_):
 def play_again():
     global replay_
     while True:
-        replay = input("\nPress <enter> to play again, or <e> to exit"
+        replay = input("\n\nPress <enter> to play again, or <e> to exit."
                        "\n>>> ")
 
         # If user presses <enter>, program sets looping to true
@@ -42,10 +42,10 @@ def play_again():
 # Main
 
 print("*** Welcome to the Maori Days of the Week Quiz! ***"
-      "\n\n\tType in the correct answer to each of the 7 questions!"
-      "\n\tWhen you type your answer, don't use any diacritics! "
+      "\n\nType in the correct answer to each of the 7 questions!"
+      "\nWhen you type your answer, don't use any diacritics! "
       "(Marks above the letters)"
-      "\n\tHopefully you will learn something new!\n")
+      "\nHopefully you will learn something new!\n")
 
 while replay_:
 
@@ -64,7 +64,8 @@ while replay_:
     score = 0
 
     # Loop for repeating the round 7 times
-    for number in range(0, 7):
+    for number in range(1, 8):
+        print(f"\nQuestion {number}:")
         # Generating random question out of the list of questions
         random_question = random.choice(questions)
         rand_day = random_question["day"]
@@ -88,9 +89,9 @@ while replay_:
     if len(wrong_answers) == 0:
         print("\nCongratulations, you got every question correct!")
     else:
-        print(f"\nWrong answers:")
+        print(f"\nThe correct answers were:")
         for wrong_answer in wrong_answers:
-            print(wrong_answers)
+            print(wrong_answer.title(), end="   ")
 
     play_again()
 
