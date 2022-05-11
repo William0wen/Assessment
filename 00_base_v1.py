@@ -1,4 +1,5 @@
-"""Maori Quiz base program by William Owen"""
+"""Maori Quiz base program by William Owen
+Meets PEP8 requirements"""
 
 import random
 
@@ -9,7 +10,8 @@ replay_ = True
 def ask(question_text, answer_):
     global score
     # Ask question
-    question = input(f"What is the Maori word for {question_text}? ").lower().strip()
+    question = input(f"What is the Maori word for "
+                     f"{question_text}? ").lower().strip()
 
     # If answer is correct, continue
     if question == answer_:
@@ -36,7 +38,8 @@ def play_again():
         elif replay.lower().strip() == "e":
             replay_ = False
             break
-        # Else, question loops (I don't need to put an else statement in this case)
+        # Else, question loops
+        # (I don't need to put an else statement in this case)
 
 
 # Main
@@ -77,7 +80,8 @@ while replay_:
         # question loop
         ask(rand_day, rand_answer)
 
-        # If the score hasn't changed, the question answer is added to a wrong_answers list
+        # If the score hasn't changed, the question answer is
+        # added to a wrong_answers list
         if score == before_score:
             wrong_answers.append(random_question.pop("answer"))
 
