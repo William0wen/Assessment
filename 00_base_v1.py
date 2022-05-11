@@ -2,19 +2,7 @@
 
 import random
 
-# List of questions and answers, stored in dictionaries
-questions = [{"day": "Monday", "answer": "rahina"},
-             {"day": "Tuesday", "answer": "ratu"},
-             {"day": "Wednesday", "answer": "raapa"},
-             {"day": "Thursday", "answer": "rapare"},
-             {"day": "Friday", "answer": "ramere"},
-             {"day": "Saturday", "answer": "rahoroi"},
-             {"day": "Sunday", "answer": "ratapu"}]
-
-# List that contains the answers the user gets wrong
-wrong_answers = []
-
-score = 0
+replay_ = True
 
 
 # Ask question function
@@ -36,50 +24,74 @@ def ask(question_text, answer_):
 
 # Function to check user input (for y/n)
 def play_again():
+    global replay_
     while True:
         replay = input("\nPress <enter> to play again, or <e> to exit"
                        "\n>>> ")
 
-        # If user presses <enter>, program sends out a looping signal
+        # If user presses <enter>, program sets looping to true
         if replay == "":
-            print("Playing again...")
             break
-        # If user presses <e>, program ends
+        # If user presses <e>, looping is false and program ends
         elif replay.lower().strip() == "e":
-            print("Exiting...")
+            replay_ = False
             break
         # Else, question loops (I don't need to put an else statement in this case)
 
 
 # Main
 
-# Loop for repeating the round 7 times
-for number in range(0, 7):
-    # Generating random question out of the list of questions
-    random_question = random.choice(questions)
-    rand_day = random_question["day"]
-    rand_answer = random_question["answer"]
+print("*** Welcome to the Maori Days of the Week Quiz! ***"
+      "\n\n\tType in the correct answer to each of the 7 questions!"
+      "\n\tWhen you type your answer, don't use any diacritics! "
+      "(Marks above the letters)"
+      "\n\tHopefully you will learn something new!\n")
 
-    # Assigning the beforehand score to a variable
-    before_score = score
+while replay_:
 
-    # question loop
-    ask(rand_day, rand_answer)
+    # List of questions and answers, stored in a list
+    questions = [{"day": "Monday", "answer": "rahina"},
+                 {"day": "Tuesday", "answer": "ratu"},
+                 {"day": "Wednesday", "answer": "raapa"},
+                 {"day": "Thursday", "answer": "rapare"},
+                 {"day": "Friday", "answer": "ramere"},
+                 {"day": "Saturday", "answer": "rahoroi"},
+                 {"day": "Sunday", "answer": "ratapu"}]
 
-    # If the score hasn't changed, the question answer is added to a wrong_answers list
-    if score == before_score:
-        wrong_answers.append(random_question.pop("answer"))
+    # List that contains the answers the user gets wrong
+    wrong_answers = []
 
-    # removing the question that has already been asked.
-    questions.remove(random_question)
+    score = 0
 
-print(f"\nYour final score is:\n\t*** {score}/7! ***")
+    # Loop for repeating the round 7 times
+    for number in range(0, 7):
+        # Generating random question out of the list of questions
+        random_question = random.choice(questions)
+        rand_day = random_question["day"]
+        rand_answer = random_question["answer"]
 
-if len(wrong_answers) == 0:
-    print("\nCongratulations, you got every question correct!")
-else:
-    print(f"\nWrong answers:")
-    for answer in wrong_answers:
-        print(wrong_answers)
+        # Assigning the beforehand score to a variable
+        before_score = score
 
+        # question loop
+        ask(rand_day, rand_answer)
 
+        # If the score hasn't changed, the question answer is added to a wrong_answers list
+        if score == before_score:
+            wrong_answers.append(random_question.pop("answer"))
+
+        # removing the question that has already been asked.
+        questions.remove(random_question)
+
+    print(f"\nYour final score is:\n\t*** {score}/7! ***")
+
+    if len(wrong_answers) == 0:
+        print("\nCongratulations, you got every question correct!")
+    else:
+        print(f"\nWrong answers:")
+        for wrong_answer in wrong_answers:
+            print(wrong_answers)
+
+    play_again()
+
+print("\n*** Thank you for playing the Maori Quiz! ***")
