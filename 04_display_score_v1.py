@@ -11,6 +11,7 @@ questions = [{"day": "Monday", "answer": "rahina"},
              {"day": "Saturday", "answer": "rahoroi"},
              {"day": "Sunday", "answer": "ratapu"}]
 
+# List that contains the answers the user gets wrong
 wrong_answers = []
 
 score = 0
@@ -60,4 +61,6 @@ print(f"\nYour final score is:\n\t*** {score}/7! ***")
 if len(wrong_answers) == 0:
     print("\nCongratulations, you got every question correct!")
 else:
-    print(f"\nWrong answers: {wrong_answers}")
+    print(f"\nWrong answers:")
+    for answer in wrong_answers:
+        print(wrong_answers)
