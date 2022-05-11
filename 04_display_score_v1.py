@@ -18,13 +18,13 @@ score = 0
 
 
 # Ask question function
-def ask(question_text, answer):
+def ask(question_text, answer_):
     global score
     # Ask question
     question = input(f"What is the Maori word for {question_text}? ").lower().strip()
 
     # If answer is correct, continue
-    if question == answer:
+    if question == answer_:
         print("\nCorrect!")
         score += 1
         print(f"score: {score}\n")
