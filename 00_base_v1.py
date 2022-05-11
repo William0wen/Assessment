@@ -95,4 +95,4 @@ while replay_:
 
     play_again()
 
-print("\n*** Thank you for playing the Maori Quiz! ***")
+print("\n\n*** Thank you for playing the Maori Quiz! ***")
