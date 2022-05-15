@@ -63,4 +63,4 @@ if len(wrong_answers) == 0:
 else:
     print(f"\nWrong answers:")
     for answer in wrong_answers:
-        print(wrong_answers)
+        print(wrong_answers, end=" ")
