@@ -12,6 +12,7 @@ questions = [{"day": "Monday", "answer": "rahina"},
              {"day": "Saturday", "answer": "rahoroi"},
              {"day": "Sunday", "answer": "ratapu"}]
 
+# Drawing the random question and answer from the questions list
 random_question = random.choice(questions)
 rand_day = random_question["day"]
 rand_answer = random_question["answer"]
