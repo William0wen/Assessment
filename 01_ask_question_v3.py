@@ -26,5 +26,3 @@ def ask(question_text, answer):
 
 # Main
 ask("What is the Maori word for Tuesday? ", "ratu")
-
-
