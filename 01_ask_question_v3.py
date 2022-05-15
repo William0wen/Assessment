@@ -8,7 +8,7 @@ def ask(question_text, answer):
     global score
     while True:
         # Ask question
-        question = input("\nWhat is the Maori word for Tuesday? ").lower().strip()
+        question = input(f"\n{question_text}").lower().strip()
 
         # If answer is correct, continue
         if question == answer:
