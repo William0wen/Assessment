@@ -1,5 +1,5 @@
 """Maori Quiz final program by William Owen
-Meets PEP8 requirements"""
+Meets PEP8 standards"""
 
 import random
 
