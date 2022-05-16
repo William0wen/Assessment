@@ -46,7 +46,7 @@ def play_again():
 
 print("*** Welcome to the Maori Days of the Week Quiz! ***"
       "\n\nType in the correct answer to each of the 7 questions!"
-      "\nWhen you type your answer, don't use any diacritics! "
+      "\nWhen you type your answer, don't use any macrons! "
       "(Marks above the letters)"
       "\nHopefully you will learn something new!\n")
 
